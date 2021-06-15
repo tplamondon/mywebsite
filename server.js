@@ -19,6 +19,7 @@ app.set('views', __dirname + '/views');
 app.use('/assets', express.static('assets'))
 
 app.get('/', (req, res) => res.render('index.html'))
+app.get('/navbar', (req, res) => res.render('navbar.html'))
 
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
