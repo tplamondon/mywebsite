@@ -7,8 +7,8 @@ const express = require('express')
 const mustacheExpress = require('mustache-express');
 const app = express()
 
-const bodyParser = require('body-parser')
-app.use(bodyParser.urlencoded({extended: true}))
+//const bodyParser = require('body-parser')
+//app.use(bodyParser.urlencoded({extended: true}))
 
 
 const port = 80

@@ -1,0 +1,25 @@
+{
+  "name": "thomassite",
+  "version": "1.0.0",
+  "description": "This was used for formatting this readme correctly: <br />\r https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tplamondon/mywebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tplamondon/mywebsite/issues"
+  },
+  "homepage": "https://github.com/tplamondon/mywebsite#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "mustache-express": "^1.3.1"
+  }
+}
