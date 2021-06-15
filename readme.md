@@ -26,8 +26,3 @@ How to run as server for others (I think):
  5. any other firewall settings needed, not sure what
  6. navigate to root folder of website
  7. run "node server.js" in console
-
-
-## Basic Sitemap:
- - index.html
-   * First page
