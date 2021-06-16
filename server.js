@@ -7,6 +7,7 @@ const express = require('express')
 const mustacheExpress = require('mustache-express');
 const app = express()
 const sass = require('sass');
+const path = require('path');
 
 //const bodyParser = require('body-parser')
 //app.use(bodyParser.urlencoded({extended: true}))
@@ -21,6 +22,18 @@ app.use('/assets', express.static('assets'))
 
 app.get('/', (req, res) => res.render('index.html'))
 app.get('/navbar', (req, res) => res.render('navbar.html'))
+app.get('/downloadResume', function (req, res) {
+  var filePath = '/files/'
+   var file = path.join(__dirname + filePath, 'T Plamondon Resume V8.pdf');
+   res.download(file, function (err) {
+       if (err) {
+           console.log("Error");
+           console.log(err);
+       } else {
+           console.log("Success");
+       }
+   });
+});
 
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
