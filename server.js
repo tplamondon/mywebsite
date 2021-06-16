@@ -13,7 +13,7 @@ const path = require('path');
 //app.use(bodyParser.urlencoded({extended: true}))
 
 
-const port = 80
+const port = process.env.port || 80
 
 app.engine('html', mustacheExpress())
 app.set('view engine', 'mustache')
