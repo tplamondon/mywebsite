@@ -24,7 +24,7 @@ app.get('/', (req, res) => res.render('index.html'))
 app.get('/navbar', (req, res) => res.render('navbar.html'))
 app.get('/downloadResume', function (req, res) {
   var filePath = '/files/'
-   var file = path.join(__dirname + filePath, 'T Plamondon Resume V8.pdf');
+   var file = path.join(__dirname + filePath, 'T Plamondon Resume Website.pdf');
    res.download(file, function (err) {
        if (err) {
            console.log("Error");
